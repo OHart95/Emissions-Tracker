@@ -7,7 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Trip & emissions calculator</h1>
+
+    <form>
+        <label for="reg">Registration:</label>
+        <input type="text" id="reg" name="reg" required>
+
+        <label for="start">Start address:</label>
+        <input type="text" id="start" name="start" required>
+
+        <label for="destination">Destination address:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div id="map"></div>
 
     <script src="assets/app.js"></script>
 </body>
