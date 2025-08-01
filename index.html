@@ -9,30 +9,29 @@
 </head>
 <body>
 
-    <div class = "info-panel">
-        <h2>Emissions Tracker</h2>
-        <p>Calculate your trip emissions and view the route on the map.</p>
-    
+        <div class = "info-panel">
+            <h1>Emissions Tracker</h1>
+            <h3>Calculate your trip emissions and view the route on the map.</h3>
+        
 
-        <form id="trip-form">
-            <label for="reg">Registration:</label>
-            <input type="text" id="reg" name="reg" required>
+            <form id="trip-form">
+                <label for="reg">Registration:</label>
+                <input type="text" id="reg" name="reg" required>
 
-            <label for="start">Start address:</label>
-            <input type="text" id="start" name="start" required>
+                <label for="start">Start address:</label>
+                <input type="text" id="start" name="start" required>
 
-            <label for="destination">Destination address:</label>
-            <input type="text" id="destination" name="destination" required>
+                <label for="destination">Destination address:</label>
+                <input type="text" id="destination" name="destination" required>
 
-            <button type="submit">Calculate</button>
-        </form>
+                <button type="submit" class="primary-button">Calculate</button>
+            </form>
 
-        <div id="route-info" class="info"></div>
+            <div id="route-info" class="info"></div>
 
-    </div>
+        </div>
 
-    <div id="map"></div>
-
+        <div id="map"></div>
 
     <script src="assets/app.js"></script>
 </body>

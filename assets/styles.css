@@ -1,8 +1,10 @@
-root {
+:root {
     --primary-color: #143275; /* Skanska Blue */
     --secondary-color: #ECECEC; /* Skanska Light Grey */
     --text-color: #333333; /* Skanska Dim Black */
     --background-color: #F5F5F5; /* Skanska Dim White */
+    --input-border-color: #858585; /* Skanska dark grey */
+    --primary-button-color: #3ECE7B; /* Skanska Active green */
 }
 
 /* CSS Reset */
@@ -12,29 +14,75 @@ root {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 46px;
+}
+
+h1, h2, h3 {
+  font-family: "Shape Sans", system-ui, sans-serif;
+  color: var(--primary-color);
+}
+
 /* Body Styles */
 body {
   min-height: 100vh; /* Full viewport height */
   font-family: "Shape Sans", system-ui, sans-serif;
-  background-color: var(--background-color);
+  background-color: white;
   color: var(--text-color);
-  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  width: 100%;
-  max-width: 600px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 #map {
-  width: 50%;
-  height: 500px;
+  flex: auto;
+  height: 100vh; /* Full viewport height */
+}
+
+
+.info-panel {
+  width: 500px;
+  padding: 20px;
+  border-right: 1px solid var(--secondary-color);
+}
+
+#trip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#trip-form label {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#trip-form input {
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+}
+
+#trip-form input:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.primary-button {
+  background-color: var(--primary-button-color);
+  color: var(--text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#trip-form .primary-button {
   margin-top: 20px;
+}
+
+#route-info {
+  margin-top: 20px;
+  padding: 20px;
+  /* background-color: var(--secondary-color); */
+}
+
+#route-info h3 {
+  margin-bottom: 20px;
 }

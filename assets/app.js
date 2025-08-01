@@ -45,6 +45,8 @@ function calculateAndDisplayRoute(start, end) {
         const durationText = leg.duration.text;
 
         document.getElementById("route-info").innerHTML = `
+
+        <h3>Route Information</h3>
         <p><strong>Distance:</strong> ${distanceText}</p>
         <p><strong>Estimated time:</strong> ${durationText}</p>
         `;
