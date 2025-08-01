@@ -15,7 +15,7 @@ async function fetchVehicleData(registration) {
   return {
     co2Emissions: data.co2Emissions,
     make: data.make,
-    model: data.model,
+    yearOfManufacture: data.yearOfManufacture,
     fuelType: data.fuelType
   };
 }
@@ -82,7 +82,7 @@ async function calculateAndDisplayRoute(start, destination, reg) {
                     document.getElementById("route-info").innerHTML = `
                         <p><strong>Vehicle Info:</strong></p>
                         <p>Make: ${vehicleData.make}</p>
-                        <p>Model: ${vehicleData.model}</p>
+                        <p>Year: ${vehicleData.yearOfManufacture}</p>
                         <p>Fuel Type: ${vehicleData.fuelType}</p>
                         <p>CO₂ Emissions: ${emissionsPerKm} g/km</p>
                         <hr>
