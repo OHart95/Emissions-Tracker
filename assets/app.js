@@ -85,7 +85,9 @@ async function calculateAndDisplayRoute(start, destination, reg) {
                         <p>Year: ${vehicleData.yearOfManufacture}</p>
                         <p>Fuel Type: ${vehicleData.fuelType}</p>
                         <p>CO₂ Emissions: ${emissionsPerKm} g/km</p>
+                        <br>
                         <hr>
+                        <br>
                         <p><strong>Trip Info:</strong></p>
                         <p>Distance: ${distanceInKm} km</p>
                         <p><strong>Total Trip Emissions: ${totalEmissions} g CO₂</strong></p>

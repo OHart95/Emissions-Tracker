@@ -67,6 +67,9 @@ body {
 
 .primary-button {
   background-color: var(--primary-button-color);
+  font-family: "Shape Sans", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
   color: var(--text-color);
   padding: 10px;
   border: none;
